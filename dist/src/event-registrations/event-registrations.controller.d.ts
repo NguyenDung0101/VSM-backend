@@ -17,13 +17,13 @@ export declare class EventRegistrationsController {
         phone: string;
         updatedAt: Date;
         status: import(".prisma/client").$Enums.RegistrationStatus;
-        eventId: string;
         fullName: string;
         emergencyContact: string;
         emergencyPhone: string | null;
         medicalConditions: string | null;
         experience: import(".prisma/client").$Enums.ExperienceLevel;
         registeredAt: Date;
+        eventId: string;
         userId: string;
     }>;
     getMyRegistrations(req: any): Promise<({
@@ -42,13 +42,13 @@ export declare class EventRegistrationsController {
         phone: string;
         updatedAt: Date;
         status: import(".prisma/client").$Enums.RegistrationStatus;
-        eventId: string;
         fullName: string;
         emergencyContact: string;
         emergencyPhone: string | null;
         medicalConditions: string | null;
         experience: import(".prisma/client").$Enums.ExperienceLevel;
         registeredAt: Date;
+        eventId: string;
         userId: string;
     })[]>;
     getEventRegistrations(eventId: string, req: any): Promise<({
@@ -64,13 +64,13 @@ export declare class EventRegistrationsController {
         phone: string;
         updatedAt: Date;
         status: import(".prisma/client").$Enums.RegistrationStatus;
-        eventId: string;
         fullName: string;
         emergencyContact: string;
         emergencyPhone: string | null;
         medicalConditions: string | null;
         experience: import(".prisma/client").$Enums.ExperienceLevel;
         registeredAt: Date;
+        eventId: string;
         userId: string;
     })[]>;
     updateRegistrationStatus(id: string, status: RegistrationStatus, req: any): Promise<{
@@ -91,13 +91,13 @@ export declare class EventRegistrationsController {
         phone: string;
         updatedAt: Date;
         status: import(".prisma/client").$Enums.RegistrationStatus;
-        eventId: string;
         fullName: string;
         emergencyContact: string;
         emergencyPhone: string | null;
         medicalConditions: string | null;
         experience: import(".prisma/client").$Enums.ExperienceLevel;
         registeredAt: Date;
+        eventId: string;
         userId: string;
     }>;
     cancelRegistration(id: string, req: any): Promise<{
@@ -109,20 +109,20 @@ export declare class EventRegistrationsController {
             description: string;
             content: string;
             category: import(".prisma/client").$Enums.EventCategory;
-            featured: boolean;
             status: import(".prisma/client").$Enums.EventStatus;
-            authorId: string;
+            featured: boolean;
             date: Date;
+            authorId: string;
             location: string;
             image: string | null;
             maxParticipants: number;
-            currentParticipants: number;
             distance: string | null;
             registrationFee: number | null;
             requirements: string | null;
             published: boolean;
             registrationDeadline: Date | null;
             organizer: string | null;
+            currentParticipants: number;
         };
     } & {
         id: string;
@@ -130,13 +130,13 @@ export declare class EventRegistrationsController {
         phone: string;
         updatedAt: Date;
         status: import(".prisma/client").$Enums.RegistrationStatus;
-        eventId: string;
         fullName: string;
         emergencyContact: string;
         emergencyPhone: string | null;
         medicalConditions: string | null;
         experience: import(".prisma/client").$Enums.ExperienceLevel;
         registeredAt: Date;
+        eventId: string;
         userId: string;
     }>;
     getRegistrationStats(eventId?: string): Promise<{

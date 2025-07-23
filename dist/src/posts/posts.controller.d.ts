@@ -24,13 +24,13 @@ export declare class PostsController {
         excerpt: string;
         cover: string | null;
         category: import(".prisma/client").$Enums.PostCategory;
+        status: import(".prisma/client").$Enums.PostStatus;
+        featured: boolean;
+        authorId: string;
         views: number;
         likes: number;
-        featured: boolean;
-        status: import(".prisma/client").$Enums.PostStatus;
         commentsCount: number;
         publishedAt: Date | null;
-        authorId: string;
     }>;
     findAll(query: QueryPostsDto): Promise<{
         data: {
@@ -52,12 +52,12 @@ export declare class PostsController {
             excerpt: string;
             cover: string | null;
             category: import(".prisma/client").$Enums.PostCategory;
+            status: import(".prisma/client").$Enums.PostStatus;
+            featured: boolean;
+            authorId: string;
             views: number;
             likes: number;
-            featured: boolean;
-            status: import(".prisma/client").$Enums.PostStatus;
             publishedAt: Date | null;
-            authorId: string;
         }[];
         meta: {
             total: number;
@@ -85,12 +85,12 @@ export declare class PostsController {
         excerpt: string;
         cover: string | null;
         category: import(".prisma/client").$Enums.PostCategory;
+        status: import(".prisma/client").$Enums.PostStatus;
+        featured: boolean;
+        authorId: string;
         views: number;
         likes: number;
-        featured: boolean;
-        status: import(".prisma/client").$Enums.PostStatus;
         publishedAt: Date | null;
-        authorId: string;
     }>;
     update(id: string, updatePostDto: UpdatePostDto, req: any): Promise<{
         author: {
@@ -108,13 +108,13 @@ export declare class PostsController {
         excerpt: string;
         cover: string | null;
         category: import(".prisma/client").$Enums.PostCategory;
+        status: import(".prisma/client").$Enums.PostStatus;
+        featured: boolean;
+        authorId: string;
         views: number;
         likes: number;
-        featured: boolean;
-        status: import(".prisma/client").$Enums.PostStatus;
         commentsCount: number;
         publishedAt: Date | null;
-        authorId: string;
     }>;
     remove(id: string, req: any): Promise<{
         id: string;
@@ -126,12 +126,12 @@ export declare class PostsController {
         excerpt: string;
         cover: string | null;
         category: import(".prisma/client").$Enums.PostCategory;
+        status: import(".prisma/client").$Enums.PostStatus;
+        featured: boolean;
+        authorId: string;
         views: number;
         likes: number;
-        featured: boolean;
-        status: import(".prisma/client").$Enums.PostStatus;
         commentsCount: number;
         publishedAt: Date | null;
-        authorId: string;
     }>;
 }

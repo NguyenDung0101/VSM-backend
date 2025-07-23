@@ -26,7 +26,7 @@
     "db:reset": "npx prisma migrate reset"
   },
   "dependencies": {
-    "@nestjs/common": "^10.0.0",
+    "@nestjs/common": "^11.1.5",
     "@nestjs/config": "^3.1.1",
     "@nestjs/core": "^11.1.5",
     "@nestjs/jwt": "^10.2.0",

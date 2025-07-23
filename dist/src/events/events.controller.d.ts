@@ -18,20 +18,20 @@ export declare class EventsController {
         description: string;
         content: string;
         category: import(".prisma/client").$Enums.EventCategory;
-        featured: boolean;
         status: import(".prisma/client").$Enums.EventStatus;
-        authorId: string;
+        featured: boolean;
         date: Date;
+        authorId: string;
         location: string;
         image: string | null;
         maxParticipants: number;
-        currentParticipants: number;
         distance: string | null;
         registrationFee: number | null;
         requirements: string | null;
         published: boolean;
         registrationDeadline: Date | null;
         organizer: string | null;
+        currentParticipants: number;
     }>;
     findAll(query: any): Promise<{
         data: ({
@@ -50,20 +50,20 @@ export declare class EventsController {
             description: string;
             content: string;
             category: import(".prisma/client").$Enums.EventCategory;
-            featured: boolean;
             status: import(".prisma/client").$Enums.EventStatus;
-            authorId: string;
+            featured: boolean;
             date: Date;
+            authorId: string;
             location: string;
             image: string | null;
             maxParticipants: number;
-            currentParticipants: number;
             distance: string | null;
             registrationFee: number | null;
             requirements: string | null;
             published: boolean;
             registrationDeadline: Date | null;
             organizer: string | null;
+            currentParticipants: number;
         })[];
         pagination: {
             total: number;
@@ -90,20 +90,20 @@ export declare class EventsController {
             description: string;
             content: string;
             category: import(".prisma/client").$Enums.EventCategory;
-            featured: boolean;
             status: import(".prisma/client").$Enums.EventStatus;
-            authorId: string;
+            featured: boolean;
             date: Date;
+            authorId: string;
             location: string;
             image: string | null;
             maxParticipants: number;
-            currentParticipants: number;
             distance: string | null;
             registrationFee: number | null;
             requirements: string | null;
             published: boolean;
             registrationDeadline: Date | null;
             organizer: string | null;
+            currentParticipants: number;
         })[];
         pagination: {
             total: number;
@@ -133,13 +133,13 @@ export declare class EventsController {
             phone: string;
             updatedAt: Date;
             status: import(".prisma/client").$Enums.RegistrationStatus;
-            eventId: string;
             fullName: string;
             emergencyContact: string;
             emergencyPhone: string | null;
             medicalConditions: string | null;
             experience: import(".prisma/client").$Enums.ExperienceLevel;
             registeredAt: Date;
+            eventId: string;
             userId: string;
         })[];
     } & {
@@ -150,20 +150,20 @@ export declare class EventsController {
         description: string;
         content: string;
         category: import(".prisma/client").$Enums.EventCategory;
-        featured: boolean;
         status: import(".prisma/client").$Enums.EventStatus;
-        authorId: string;
+        featured: boolean;
         date: Date;
+        authorId: string;
         location: string;
         image: string | null;
         maxParticipants: number;
-        currentParticipants: number;
         distance: string | null;
         registrationFee: number | null;
         requirements: string | null;
         published: boolean;
         registrationDeadline: Date | null;
         organizer: string | null;
+        currentParticipants: number;
     }>;
     update(id: string, updateEventDto: UpdateEventDto, req: any): Promise<{
         author: {
@@ -179,20 +179,20 @@ export declare class EventsController {
         description: string;
         content: string;
         category: import(".prisma/client").$Enums.EventCategory;
-        featured: boolean;
         status: import(".prisma/client").$Enums.EventStatus;
-        authorId: string;
+        featured: boolean;
         date: Date;
+        authorId: string;
         location: string;
         image: string | null;
         maxParticipants: number;
-        currentParticipants: number;
         distance: string | null;
         registrationFee: number | null;
         requirements: string | null;
         published: boolean;
         registrationDeadline: Date | null;
         organizer: string | null;
+        currentParticipants: number;
     }>;
     remove(id: string, req: any): Promise<{
         id: string;
@@ -202,20 +202,20 @@ export declare class EventsController {
         description: string;
         content: string;
         category: import(".prisma/client").$Enums.EventCategory;
-        featured: boolean;
         status: import(".prisma/client").$Enums.EventStatus;
-        authorId: string;
+        featured: boolean;
         date: Date;
+        authorId: string;
         location: string;
         image: string | null;
         maxParticipants: number;
-        currentParticipants: number;
         distance: string | null;
         registrationFee: number | null;
         requirements: string | null;
         published: boolean;
         registrationDeadline: Date | null;
         organizer: string | null;
+        currentParticipants: number;
     }>;
     getEventStats(query: any, req: any): Promise<{
         overview: {
@@ -243,20 +243,20 @@ export declare class EventsController {
             description: string;
             content: string;
             category: import(".prisma/client").$Enums.EventCategory;
-            featured: boolean;
             status: import(".prisma/client").$Enums.EventStatus;
-            authorId: string;
+            featured: boolean;
             date: Date;
+            authorId: string;
             location: string;
             image: string | null;
             maxParticipants: number;
-            currentParticipants: number;
             distance: string | null;
             registrationFee: number | null;
             requirements: string | null;
             published: boolean;
             registrationDeadline: Date | null;
             organizer: string | null;
+            currentParticipants: number;
         })[];
     }>;
 }

@@ -51,10 +51,10 @@ export declare class DashboardController {
                 id: string;
                 name: string;
                 createdAt: Date;
+                date: Date;
                 author: {
                     name: string;
                 };
-                date: Date;
                 location: string;
                 maxParticipants: number;
                 currentParticipants: number;
@@ -64,9 +64,9 @@ export declare class DashboardController {
                 createdAt: Date;
                 title: string;
                 category: import(".prisma/client").$Enums.PostCategory;
+                status: import(".prisma/client").$Enums.PostStatus;
                 views: number;
                 likes: number;
-                status: import(".prisma/client").$Enums.PostStatus;
                 author: {
                     name: string;
                 };
@@ -115,13 +115,13 @@ export declare class DashboardController {
             phone: string;
             updatedAt: Date;
             status: import(".prisma/client").$Enums.RegistrationStatus;
-            eventId: string;
             fullName: string;
             emergencyContact: string;
             emergencyPhone: string | null;
             medicalConditions: string | null;
             experience: import(".prisma/client").$Enums.ExperienceLevel;
             registeredAt: Date;
+            eventId: string;
             userId: string;
         })[];
         totalEvents?: undefined;
